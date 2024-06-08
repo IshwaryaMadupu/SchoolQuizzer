@@ -1,0 +1,128 @@
+﻿body {
+    background-image: url('https://media.istockphoto.com/id/1464722744/photo/yellow-question-mark-surrounded-by-colorful-question-marks-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=xbjop9H6o0Wh1PREqZfFUwmwIrrZ0nt5ESGGZvTMvMM=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.main {
+    width: 500px;
+    padding: 200px;
+    margin-top:50px;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 200px;
+    justify-content: center;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.header{ 
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#popup-container {
+    background-color:transparent;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#popup-container div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: transparent;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.cover-image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: lightblue;
+        }

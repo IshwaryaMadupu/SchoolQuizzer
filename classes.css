@@ -1,0 +1,37 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-voBDOM4SOeWKUJM28rY1HrhyuSuESvpivg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.container {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: floralwhite;
+}
+
+    .container:hover {
+        transform: scale(1.05);
+    }
+
+h1 {
+    line-height: 1.5;
+}
