@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login/Signup</title>
+    <style>
+        body {
+            background: url('https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border-radius: 8px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+            .container:hover {
+                transform: scale(1.05);
+            }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        h2 {
+            color: #333;
+        }
+        .alert {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .alert-danger {
+            background-color: #F44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=500&h=333&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxvZ2lufGVufDB8fDB8fHww" alt="No-image" ,width:0px,height:5px>
+        <form id="form">
+            <h2>Login</h2>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#">Signup</a></p>
+            <p><a href="#">Forgot your password?</a></p>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('form');
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const message = document.getElementById('message');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (email.value === 'your@email.com' && password.value === 'yourpassword') {
+                    message.innerHTML = '<div class="alert alert-success">Login successful.</div>';
+                    window.location.href = "frontpage.html";
+
+                } else {
+                    message.innerHTML = '<div class="alert alert-danger">Invalid email or password.</div>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
